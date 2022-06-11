@@ -49,7 +49,7 @@ const bacaData = (fnCallback) => {
         pesan3 = konten3[0].data.message;
         hasil[2] = pesan3.split(' ')[1];
 
-        return fnCallback(hasil);
+        return fnCallback(err, hasil);
       })
     })
   })
